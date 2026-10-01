@@ -2,590 +2,740 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Varshith Kumar | Official Artist Website</title>
+<meta name="description"
+content="Official website of Varshith Kumar — Music Artist, Composer and Independent Creator.">
 
-    <meta name="description" content="Official website of Varshith Kumar — Music Artist, Composer and Independent Creator.">
-    <meta name="author" content="Varshith Kumar">
+<meta name="author" content="Varshith Kumar">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="logo.jpg">
+<title>Varshith Kumar | Music Artist</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        html {
-            scroll-behavior: smooth;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background:
-                radial-gradient(circle at 80% 10%, rgba(255, 91, 37, 0.10), transparent 30%),
-                radial-gradient(circle at 10% 50%, rgba(100, 80, 255, 0.08), transparent 30%),
-                #080808;
-            color: #ffffff;
-            line-height: 1.6;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 50% 0%, #24140d 0%, #090909 42%, #050505 100%);
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-        /* ================= HEADER ================= */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(8, 8, 8, 0.82);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
+/* NAVIGATION */
 
-        nav {
-            max-width: 1150px;
-            margin: auto;
-            padding: 14px 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 
-        /* LOGO */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        .logo {
-            width: 46px;
-            height: 46px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
+    padding: 18px 7%;
 
-        .logo img {
-            width: 46px;
-            height: 46px;
-            display: block;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 1px solid rgba(255,255,255,0.20);
-            box-shadow: 0 0 22px rgba(255, 91, 37, 0.18);
-        }
+    background: rgba(5,5,5,0.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
 
-        nav ul li a {
-            font-size: 14px;
-            color: #bdbdbd;
-            transition: 0.3s;
-        }
+.logo {
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 
-        nav ul li a:hover {
-            color: #ffffff;
-        }
+.logo span {
+    color: #ff5b25;
+}
 
-        /* ================= HERO ================= */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
 
-        .hero {
-            min-height: 88vh;
-            max-width: 1150px;
-            margin: auto;
-            padding: 100px 25px 80px;
-            display: flex;
-            align-items: center;
-        }
+nav li {
+    font-size: 14px;
+    color: #cccccc;
+}
 
-        .hero-content {
-            max-width: 850px;
-        }
+nav li a:hover {
+    color: #ffffff;
+}
 
-        .eyebrow {
-            display: inline-block;
-            font-size: 12px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #ff6b35;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
+/* HERO */
 
-        .hero h1 {
-            font-size: clamp(65px, 12vw, 150px);
-            line-height: 0.88;
-            letter-spacing: -7px;
-            font-weight: 800;
-        }
+.hero {
+    min-height: 100vh;
 
-        .hero h1 span {
-            display: block;
-            color: #ffffff;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        .hero h1 .accent {
-            color: transparent;
-            -webkit-text-stroke: 1px rgba(255,255,255,0.75);
-        }
+    text-align: center;
 
-        .hero-subtitle {
-            margin-top: 35px;
-            font-size: 18px;
-            color: #b9b9b9;
-            max-width: 650px;
-        }
+    padding: 130px 20px 80px;
 
-        .hero-buttons {
-            margin-top: 32px;
-            display: flex;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
+    position: relative;
+}
 
-        .btn {
-            padding: 13px 22px;
-            border-radius: 30px;
-            border: 1px solid rgba(255,255,255,0.16);
-            background: rgba(255,255,255,0.05);
-            font-size: 14px;
-            transition: 0.3s;
-        }
+.hero::before {
+    content: "";
 
-        .btn.primary {
-            background: #ffffff;
-            color: #000000;
-            border-color: #ffffff;
-        }
+    position: absolute;
 
-        .btn:hover {
-            transform: translateY(-2px);
-            background: #ff5b25;
-            color: #ffffff;
-            border-color: #ff5b25;
-        }
+    width: 420px;
+    height: 420px;
 
-        /* ================= SECTIONS ================= */
+    background: #ff4b1f;
+    opacity: 0.08;
 
-        section {
-            max-width: 1150px;
-            margin: auto;
-            padding: 100px 25px;
-        }
+    filter: blur(120px);
+    border-radius: 50%;
 
-        .section-label {
-            color: #ff6b35;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 11px;
-            font-weight: bold;
-            margin-bottom: 18px;
-        }
+    top: 80px;
+    left: 50%;
 
-        section h2 {
-            font-size: clamp(35px, 6vw, 65px);
-            line-height: 1;
-            margin-bottom: 30px;
-            letter-spacing: -2px;
-        }
+    transform: translateX(-50%);
+}
 
-        .about-text {
-            max-width: 800px;
-            color: #b7b7b7;
-            font-size: 18px;
-        }
+.hero-content {
+    position: relative;
+    max-width: 850px;
+}
 
-        .about-text p {
-            margin-bottom: 18px;
-        }
+.artist-label {
+    display: inline-block;
 
-        /* ================= SOCIAL ================= */
+    padding: 8px 16px;
 
-        .social-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-top: 35px;
-        }
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50px;
 
-        .social-card {
-            padding: 25px;
-            min-height: 120px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border: 1px solid rgba(255,255,255,0.09);
-            border-radius: 18px;
-            background: rgba(255,255,255,0.035);
-            transition: 0.3s;
-        }
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 
-        .social-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255,91,37,0.5);
-            background: rgba(255,91,37,0.06);
-        }
+    color: #cccccc;
 
-        .social-name {
-            font-size: 18px;
-            font-weight: bold;
-        }
+    margin-bottom: 25px;
 
-        .social-handle {
-            color: #888;
-            font-size: 13px;
-        }
+    background: rgba(255,255,255,0.04);
+}
 
-        /* ================= CONTACT ================= */
+.hero h1 {
+    font-size: clamp(52px,10vw,110px);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -5px;
+    margin-bottom: 25px;
+}
 
-        .contact-box {
-            border-top: 1px solid rgba(255,255,255,0.10);
-            border-bottom: 1px solid rgba(255,255,255,0.10);
-            padding: 55px 0;
-        }
+.hero h1 span {
+    color: #ff5b25;
+}
 
-        .email {
-            display: inline-block;
-            margin-top: 15px;
-            font-size: clamp(20px, 4vw, 35px);
-            color: #ffffff;
-            word-break: break-word;
-        }
+.hero-description {
+    max-width: 620px;
+    margin: 0 auto 35px;
 
-        .email:hover {
-            color: #ff6b35;
-        }
+    color: #aaaaaa;
 
-        /* ================= FOOTER ================= */
+    font-size: 17px;
+}
 
-        footer {
-            max-width: 1150px;
-            margin: auto;
-            padding: 35px 25px 45px;
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            color: #666;
-            font-size: 12px;
-            border-top: 1px solid rgba(255,255,255,0.07);
-        }
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
 
-        /* ================= MOBILE ================= */
+.button {
+    display: inline-flex;
 
-        @media (max-width: 700px) {
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
 
-            nav {
-                padding: 12px 18px;
-            }
+    padding: 13px 23px;
 
-            .logo,
-            .logo img {
-                width: 40px;
-                height: 40px;
-            }
+    border-radius: 50px;
 
-            nav ul {
-                gap: 16px;
-            }
+    font-weight: 700;
+    font-size: 14px;
 
-            nav ul li a {
-                font-size: 12px;
-            }
+    transition: transform 0.2s, background 0.2s;
+}
 
-            nav ul li:nth-child(2) {
-                display: none;
-            }
+.button:hover {
+    transform: translateY(-3px);
+}
 
-            .hero {
-                min-height: 82vh;
-                padding: 80px 20px 60px;
-            }
+.primary {
+    background: #ff5b25;
+    color: #ffffff;
+}
 
-            .hero h1 {
-                font-size: clamp(55px, 18vw, 95px);
-                letter-spacing: -4px;
-            }
+.secondary {
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.04);
+    color: #ffffff;
+}
 
-            .hero-subtitle {
-                font-size: 16px;
-            }
+.button svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
 
-            section {
-                padding: 75px 20px;
-            }
+/* SECTIONS */
 
-            .social-grid {
-                grid-template-columns: 1fr;
-            }
+section {
+    padding: 100px 7%;
+}
 
-            footer {
-                padding: 30px 20px;
-                flex-direction: column;
-            }
-        }
-    </style>
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title small {
+    color: #ff5b25;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.section-title h2 {
+    font-size: clamp(32px,6vw,55px);
+
+    margin-top: 8px;
+
+    letter-spacing: -2px;
+}
+
+/* ABOUT */
+
+.about {
+    max-width: 900px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.about p {
+    color: #aaaaaa;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+/* SOCIAL */
+
+.socials {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.social {
+    min-width: 145px;
+
+    padding: 16px 22px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,0.11);
+
+    color: #dddddd;
+
+    background: rgba(255,255,255,0.035);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    transition:
+        transform 0.25s,
+        background 0.25s,
+        border-color 0.25s;
+}
+
+.social:hover {
+    background: rgba(255,255,255,0.09);
+
+    border-color: rgba(255,91,37,0.45);
+
+    transform: translateY(-4px);
+}
+
+.social svg {
+    width: 21px;
+    height: 21px;
+
+    fill: currentColor;
+}
+
+/* CONTACT */
+
+.contact-box {
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 50px 25px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.035);
+}
+
+.contact-box p {
+    color: #999999;
+
+    margin-bottom: 20px;
+}
+
+.email {
+    display: inline-block;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    font-size: 18px;
+
+    word-break: break-word;
+
+    transition: color 0.2s;
+}
+
+.email:hover {
+    color: #ff5b25;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    color: #777777;
+
+    font-size: 13px;
+}
+
+footer strong {
+    color: #cccccc;
+}
+
+/* MOBILE */
+
+@media (max-width:700px) {
+
+    nav {
+        padding: 16px 5%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 75px 5%;
+    }
+
+    .social {
+        min-width: 140px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- NAVIGATION -->
 
-    <header>
-        <nav>
+<nav>
 
-            <a href="#home" class="logo">
-                <img src="logo.jpg" alt="Varshith Kumar Logo">
-            </a>
+<a href="#home" class="logo">
+VARSHITH<span>.</span>
+</a>
 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#social">Social</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#social">Social</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-        </nav>
-    </header>
+</nav>
 
 
-    <!-- ================= HERO ================= -->
+<!-- HERO -->
 
-    <main id="home">
+<header class="hero" id="home">
 
-        <section class="hero">
+<div class="hero-content">
 
-            <div class="hero-content">
+<div class="artist-label">
+Official Artist Website
+</div>
 
-                <div class="eyebrow">
-                    Official Artist Website
-                </div>
+<h1>
+Varshith<br>
+<span>Kumar</span>
+</h1>
 
-                <h1>
-                    <span>Varshith</span>
-                    <span class="accent">Kumar</span>
-                </h1>
+<p class="hero-description">
+Music Artist • Composer • Independent Creator
+</p>
 
-                <p class="hero-subtitle">
-                    Music Artist • Composer • Independent Creator
-                </p>
+<div class="buttons">
 
-                <div class="hero-buttons">
+<!-- SPOTIFY -->
 
-                    <a
-                        class="btn primary"
-                        href="https://open.spotify.com/artist/3NE4eAnnnHyXUn2J254FVj"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Listen on Spotify
-                    </a>
+<a
+href="https://open.spotify.com/artist/3NE4eAnnnHyXUn2J254FVj"
+target="_blank"
+rel="noopener"
+class="button primary">
 
-                    <a
-                        class="btn"
-                        href="https://www.instagram.com/ursvalorvarshith/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Instagram
-                    </a>
+<svg viewBox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+10-4.48 10-10S17.52 2 12 2zm4.59 14.46c-.19.31-.59.41-.9.22
+-2.47-1.51-5.58-1.85-9.25-1.01-.35.08-.7-.14-.78-.49
+-.08-.35.14-.7.49-.78 4.01-.92 7.45-.55 10.23 1.15
+.31.19.41.59.21.91zm1.2-2.67c-.24.39-.75.51-1.14.27
+-2.83-1.74-7.14-2.25-10.48-1.23-.44.13-.9-.12-1.03-.56
+-.13-.44.12-.9.56-1.03 3.82-1.16 8.57-.6 11.83 1.4
+.39.24.51.75.26 1.15zm.1-2.78C14.5 9.01 8.27 8.8 4.68 9.89
+c-.53.16-1.09-.14-1.25-.67-.16-.53.14-1.09.67-1.25
+4.11-1.25 10.94-1.01 14.88 1.33.48.28.63.9.35 1.37
+-.27.48-.89.64-1.36.34z"/>
+</svg>
 
-                </div>
+Spotify
 
-            </div>
+</a>
 
-        </section>
 
+<!-- INSTAGRAM -->
 
-        <!-- ================= ABOUT ================= -->
+<a
+href="https://www.instagram.com/ursvalorvarshith/"
+target="_blank"
+rel="noopener"
+class="button secondary">
 
-        <section id="about">
+<svg viewBox="0 0 24 24">
+<path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7
+a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10
+a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5
+3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0
+2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.5
+6.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
 
-            <div class="section-label">
-                About
-            </div>
+Instagram
 
-            <h2>
-                Music with<br>
-                a cinematic soul.
-            </h2>
+</a>
 
-            <div class="about-text">
+</div>
 
-                <p>
-                    Varshith Kumar is an independent music artist and
-                    composer focused on creating cinematic, emotional and
-                    contemporary music experiences.
-                </p>
+</div>
 
-                <p>
-                    His work explores powerful melodies, atmospheric
-                    soundscapes, modern production and cinematic energy.
-                </p>
+</header>
 
-                <p>
-                    This is the official website for Varshith Kumar and
-                    his music.
-                </p>
 
-            </div>
+<!-- ABOUT -->
 
-        </section>
+<section id="about">
 
+<div class="section-title">
 
-        <!-- ================= SOCIAL ================= -->
+<small>About</small>
 
-        <section id="social">
+<h2>The Artist</h2>
 
-            <div class="section-label">
-                Connect
-            </div>
+</div>
 
-            <h2>
-                Find the music.
-            </h2>
+<div class="about">
 
-            <div class="social-grid">
+<p>
+Varshith Kumar is an independent music artist and
+composer focused on creating cinematic, emotional
+and contemporary music experiences.
+</p>
 
-                <a
-                    class="social-card"
-                    href="https://www.instagram.com/ursvalorvarshith/"
-                    target="_blank"
-                    rel="noopener noreferrer">
+<p>
+His work explores powerful melodies, atmospheric
+soundscapes, modern production and cinematic energy.
+</p>
 
-                    <span class="social-name">
-                        Instagram
-                    </span>
+<p>
+This is the official website for Varshith Kumar
+and his music.
+</p>
 
-                    <span class="social-handle">
-                        @ursvalorvarshith
-                    </span>
+</div>
 
-                </a>
+</section>
 
 
-                <a
-                    class="social-card"
-                    href="https://youtube.com/@vcoremusic"
-                    target="_blank"
-                    rel="noopener noreferrer">
+<!-- SOCIAL -->
 
-                    <span class="social-name">
-                        YouTube
-                    </span>
+<section id="social">
 
-                    <span class="social-handle">
-                        V Core Music
-                    </span>
+<div class="section-title">
 
-                </a>
+<small>Connect</small>
 
+<h2>Find Me</h2>
 
-                <a
-                    class="social-card"
-                    href="https://open.spotify.com/artist/3NE4eAnnnHyXUn2J254FVj"
-                    target="_blank"
-                    rel="noopener noreferrer">
+</div>
 
-                    <span class="social-name">
-                        Spotify
-                    </span>
+<div class="socials">
 
-                    <span class="social-handle">
-                        Varshith Kumar
-                    </span>
 
-                </a>
+<!-- INSTAGRAM -->
 
+<a
+href="https://www.instagram.com/ursvalorvarshith/"
+target="_blank"
+rel="noopener"
+class="social">
 
-                <a
-                    class="social-card"
-                    href="https://x.com/ursvalorvarshhit"
-                    target="_blank"
-                    rel="noopener noreferrer">
+<svg viewBox="0 0 24 24">
+<path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7
+a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10
+a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5
+3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0
+2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.5
+6.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
 
-                    <span class="social-name">
-                        X
-                    </span>
+Instagram
 
-                    <span class="social-handle">
-                        @ursvalorvarshhit
-                    </span>
+</a>
 
-                </a>
 
+<!-- YOUTUBE -->
 
-                <a
-                    class="social-card"
-                    href="https://www.facebook.com/share/19S2qdnu3e/"
-                    target="_blank"
-                    rel="noopener noreferrer">
+<a
+href="https://youtube.com/@vcoremusic"
+target="_blank"
+rel="noopener"
+class="social">
 
-                    <span class="social-name">
-                        Facebook
-                    </span>
+<svg viewBox="0 0 24 24">
+<path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5
+12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2
+0 24 0 0 0 0 12s0 5.8.5 5.8a3 3 0 0 0 2.1 2.1
+c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0
+2.1-2.1c.5-1.9.5-5.8.5-5.8s0-5.8-.5-5.8zM9.7
+15.6V8.4l6.3 3.6-6.3 3.6z"/>
+</svg>
 
-                    <span class="social-handle">
-                        Varshith Kumar
-                    </span>
+YouTube
 
-                </a>
+</a>
 
-            </div>
 
-        </section>
+<!-- SPOTIFY -->
 
+<a
+href="https://open.spotify.com/artist/3NE4eAnnnHyXUn2J254FVj"
+target="_blank"
+rel="noopener"
+class="social">
 
-        <!-- ================= CONTACT ================= -->
+<svg viewBox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10
+10 10 10-4.48 10-10S17.52 2 12 2zm4.59
+14.46c-.19.31-.59.41-.9.22-2.47-1.51-5.58-1.85
+-9.25-1.01-.35.08-.7-.14-.78-.49-.08-.35.14-.7
+.49-.78 4.01-.92 7.45-.55 10.23 1.15.31.19
+.41.59.21.91zm1.2-2.67c-.24.39-.75.51-1.14.27
+-2.83-1.74-7.14-2.25-10.48-1.23-.44.13-.9-.12-1.03-.56
+-.13-.44.12-.9.56-1.03 3.82-1.16 8.57-.6 11.83
+1.4.39.24.51.75.26 1.15zm.1-2.78C14.5 9.01
+8.27 8.8 4.68 9.89c-.53.16-1.09-.14-1.25-.67
+-.16-.53.14-1.09.67-1.25 4.11-1.25 10.94-1.01
+14.88 1.33.48.28.63.9.35 1.37-.27.48-.89.64-1.36.34z"/>
+</svg>
 
-        <section id="contact">
+Spotify
 
-            <div class="contact-box">
+</a>
 
-                <div class="section-label">
-                    Contact
-                </div>
 
-                <h2>
-                    Let's connect.
-                </h2>
+<!-- X -->
 
-                <p class="about-text">
-                    For music, collaborations and professional enquiries.
-                </p>
+<a
+href="https://x.com/ursvalorvarshhit"
+target="_blank"
+rel="noopener"
+class="social">
 
-                <a
-                    class="email"
-                    href="mailto:varshithcoremusic@gmail.com">
-                    varshithcoremusic@gmail.com
-                </a>
+<svg viewBox="0 0 24 24">
+<path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24
+l-4.89-6.39L6.48 22H3.36l7.24-8.28L2.8 2h6.4
+l4.42 5.84L18.9 2zm-1.1 17.9h1.73L8.27 4.02H6.42
+L17.8 19.9z"/>
+</svg>
 
-            </div>
+X
 
-        </section>
+</a>
 
-    </main>
 
+<!-- FACEBOOK -->
 
-    <!-- ================= FOOTER ================= -->
+<a
+href="https://www.facebook.com/share/19S2qdnu3e/"
+target="_blank"
+rel="noopener"
+class="social">
 
-    <footer>
+<svg viewBox="0 0 24 24">
+<path d="M24 12a12 12 0 1 0-13.88 11.85v-8.39H7.08
+V12h3.04V9.41c0-3 1.79-4.66 4.53-4.66 1.31 0
+2.68.23 2.68.23v2.95h-1.51c-1.49 0-1.95.92-1.95
+1.87V12h3.32l-.53 3.46h-2.79v8.39A12 12 0 0 0
+24 12z"/>
+</svg>
 
-        <span>
-            © 2026 Varshith Kumar
-        </span>
+Facebook
 
-        <span>
-            Official Artist Website
-        </span>
+</a>
 
-    </footer>
+
+<!-- EMAIL -->
+
+<a
+href="mailto:varshithcoremusic@gmail.com"
+class="social">
+
+<svg viewBox="0 0 24 24">
+<path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0
+0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0
+4-8 5-8-5V6l8 5 8-5v2z"/>
+</svg>
+
+Email
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="section-title">
+
+<small>Official Contact</small>
+
+<h2>Get in Touch</h2>
+
+</div>
+
+<div class="contact-box">
+
+<p>
+For music-related enquiries, collaborations,
+professional communication and artist verification:
+</p>
+
+<a
+href="mailto:varshithcoremusic@gmail.com"
+class="email">
+
+varshithcoremusic@gmail.com
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026
+<strong>Varshith Kumar</strong>.
+All rights reserved.
+
+</footer>
 
 </body>
-            </html>
+    </html>
